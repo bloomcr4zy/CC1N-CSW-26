@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA-009</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="mailto:email@exemplo.com" method="get">
+        <table border="1" cellpadding="10">
+            <tr>
+                <td><label for="id-usuario">Nome:</label></td>
+                <td><input type="text" name="nome-usuario" id="id-usuario" maxlength="67"
+                    placeholder="Digite Seu Nome" required></td>
+            </tr>
+            <tr>
+                <td><label for="emailpess">Email pessoal:</label></td>
+                <td><input type="email" id="emailpess" name="emailpess" placeholder="Digite seu email pessoal"></td>
+            </tr>
+            <tr>
+                <td><label for="senhas12">Senha:</label></td>
+                <td><input type="password" name="senhas12" id="senhas12" placeholder="Digite sua senha" required></td>
+            </tr>
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><input type="number" name="idade" id="idade" placeholder="Digite sua idade" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Deixe um comentário:</label><br>
+                    <textarea name="comentario" cols="50" rows="10" placeholder="Digite um comentário"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Matéria de interesse</label><br>
+                    <input type="checkbox" name="Backend" value="Backending">Backend<br>
+                    <input type="checkbox" name="Frontend" value="Frontending">Frontend<br>
+                    <input type="checkbox" name="Fullstack" value="Fullstack">Fullstack
+                </td>
+                <td>
+                    <label>Esporte Favorito:</label>
+                    <select name="Esportes">
+                        <option value="">Selecione</option>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="Vôlei">Vôlei</option>
+                        <option value="Tênis">Tênis</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Escolha uma cor: <input type="color" name="cores"></label></td>
+                <td><label>Selecione um arquivo: <input type="file" name="arquivo"></label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Data e Hora: <input type="datetime-local" name="dtlocal"></label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+                <td><input type="reset" value="Limpar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
