@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA-004</title>
+</head>
+<body>
+    <h1>Elementos de formatação de texto</h1>
+    <h2><b>Negrito vs Destaque</b></h2>
+    <p>Na frase temos uma parte do texto escrito <b>em negrito</b> a tag B (não semântica)</p>
+    <p>Na frase temos uma parte do texto escrito <strong>em negrito</strong> a tag STRONG (com semântica)</p>
+
+    <h2>Itálico vs Ênfase</h2>
+    <p>Na frase temos uma parte do texto escrito <i>em itálico</i> a tag I (não semântica)</p>
+    <p>Na frase temos uma parte do texto escrito <em>em itálico</em> a tag EM (com semântica)</p>
+
+    <h2>Texto marcado</h2>
+    <p>Aqui vamos usar um texto com <mark style="background-color: aqua;">destaque de marcador</mark> usando mark</p>
+    <p>Aqui vamos usar um texto com <mark style="background-color: rgb(185, 110, 204);">destaque de marcador</mark> usando mark</p>
+
+    <h2>Grande e pequeno</h2>
+    <p>Estamos trabalhando com um <big>texto grande</big> e um <small>texto pequeno</small> nessa frase</p>
+
+    <h2>Texto deletado vs riscado</h2>
+    <p>Nesse paragrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (forma semântica)</p>
+
+    <h2>Texto inserido vs sublinhado</h2>
+    <p>Nesse texto vamos demonstrar como <ins>destacar um texto inserido na frase</ins> de forma semântica</p>
+    <p>Nesse texto vamos demonstrar como <u>destacar um texto inserido na frase</u> de forma não semântica</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>vamos demonstrar a fórmula ax<sup>2</sup> + bx + c = 0 usando a tag sup</p>
+
+    <h2>Texto subscrito</h2>
+    <p>vamos demonstrar um texto subscrito com a fórmula da água H<sub>2</sub>O</p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>inserindo o comando <code>document.getElementById('edtCodigo')</code> que é um comando de JavaScript</p>
+    <pre><code>
+# Coeficientes da equação
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+delta = b**2 - 4*a*c
+
+if delta < 0:
+    print("A equação não possui raízes reais.")
+elif delta == 0:
+    x = -b / (2*a)
+    print("x =", x)
+else:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print("x1 =", x1)
+    print("x2 =", x2)
+    </code></pre>
+
+    <h2>Citações</h2>
+    <p>citação de O Pequeno Príncipe:
+    <q>Tu te tornas eternamente responsável por aquilo que cativas.</q></p>
+
+    <h2>Abreviações</h2>
+    <p>estamos trabalhando com <abbr title="HyperText Markup Language">HTML</abbr> e com <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h2>Texto Invertido</h2>
+    
+    <p><bdo dir="rtl">Olá, sou 21!</bdo></p>
+</body>
+</html>
