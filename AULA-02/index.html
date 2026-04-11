@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA-02</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+   
+    <h1>Desafio das imagens</h1>
+    <h2>Imagens da Cidade</h2>
+    <img src="convento-da-penha-vila-velha-es-2.webp" alt="Cidade de vila velha" width="324px"> 
+    <hr>
+    <h2>Imagem Vila Velha com legenda:</h2>
+    <figure>
+        <img src="vila-velha-praia-secreta.webp" alt="Cidade de vila velha com enfoque na praia" width="361px">
+        <figcaption>Imagem das praias magnificas de vila velha! :)</figcaption>
+    </figure>
+    <hr>
+    <h1>Imagem que muda de acordo com a resolução</h1>
+    <figure>
+        <picture>
+            <source srcset="convento-da-penha-vila-velha-es-2.webp" media="(min-width: 1000px)">
+            <img src="penha-convent-vila-velha-es-brazil.webp" alt="imagem da cidade de vv" width="361px">
+        </picture>
+        <figcaption>Essa imagem muda com a resolução</figcaption>
+    </figure>
+</body>
+</html>
